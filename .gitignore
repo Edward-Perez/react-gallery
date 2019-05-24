@@ -36,6 +36,9 @@ Temporary Items
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# Flickr API
+/src/config.js
+
 
 # dependencies
 /node_modules
