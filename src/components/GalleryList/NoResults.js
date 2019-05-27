@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const NoResults = props => {
   return (
@@ -8,10 +7,6 @@ const NoResults = props => {
       <p>Your search did not return any results. Please try again.</p>
     </li>
   )
-}
-
-NoResults.propTypes = {
-
 }
 
 export default NoResults;
