@@ -18,14 +18,16 @@ export default class Home extends Component {
   }
 
   render() {
-    const title='Come See What I See In Sweden';
+    const title='Come See My New Home... Sweden';
     const { data } = this.props;
 
     return (
       <div className='Header'>
-        <Header title={title} />
-        <SearchForm />
-        <MainNav />
+        <div id='home-back' className='background'>
+          <Header title={title} />
+          <SearchForm />
+          <MainNav />
+        </div>
         <GalleryList data={data} />
       </div>
     )

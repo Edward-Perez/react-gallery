@@ -6,7 +6,7 @@ import ListImage from './ListImage';
 
 // Returns JSX to display in the Photo Container
 const GalleryList = props => {
-  const { data, info } = props;
+  const { data } = props;
   let list;
   
   if(data.length > 0) {
@@ -27,7 +27,6 @@ const GalleryList = props => {
 
   return (
     <div className="photo-container">
-      <h3>{info}</h3>
       <ul>
         { list }
       </ul>
@@ -37,7 +36,6 @@ const GalleryList = props => {
 
 GalleryList.propsTypes = {
   data: PropTypes.object.isRequired,
-  info: PropTypes.string.isRequired
 }
 
 export default GalleryList

@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import GalleryList from '../components/GalleryList';
 import BackButton from '../components/BackButton';
 
+// Class for the Semla button
 export default class Semla extends PureComponent {
 
   static propTypes={
@@ -22,11 +23,13 @@ export default class Semla extends PureComponent {
     const { data } = this.props; 
     return (
       <div className='Header'>
-        <Header title={title}/>
-        <BackButton />
+        <div id='semla-back' className='background'>
+          <Header title={title}/>
+          <p id='info'>{info}</p>
+          <BackButton />
+        </div>
         <GalleryList 
-          data={data} 
-          info={info}  />
+          data={data} />
       </div>
     )
   }

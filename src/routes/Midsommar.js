@@ -22,11 +22,13 @@ export default class Midsommar extends Component {
     const { data } = this.props;
     return (
       <div className='Header'>
-        <Header title={title}/>
-        <BackButton />
+        <div id='midsommar-back' className='background'>
+          <Header title={title}/>
+          <p id='info'>{info}</p>
+          <BackButton />
+        </div>
         <GalleryList 
-          data={data} 
-          info={info}/>
+          data={data} />
       </div>
     )
   }

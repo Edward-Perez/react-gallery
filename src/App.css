@@ -1,7 +1,7 @@
-.App {
+ /* .App {
   text-align: center;
-}
-
+} */
+/*
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -17,10 +17,102 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+/* .App-link {
+  color: #61dafb;
+} */
+body {
+  color: white;
+  background-color: rgb(240, 238, 238);
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  padding-bottom: 5em;
+  color: white;
+  text-shadow: 1.2px 1.2px 3px rgb(26, 25, 25);
+}
+.home {
+  padding-top: 2em;
+}
+
+.error-image {
+  /* background-image: url('../img/error.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+::placeholder {
+  color: whitesmoke;
+}
+
+.photo-container ul {
+  margin-top: 1em;
+  padding: 0 1em;
+}
+
+.photo-container ul li {
+  border: 1px solid rgb(172, 171, 171);
+  border-radius: 2%;
+  box-shadow: 2px 2px 5px rgb(36, 36, 36);
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-position: center top; 
+  background-size: cover; 
+  border-bottom: 2px solid rgb(51, 51, 51);
+  box-shadow: 3px 3px 5px rgb(187, 187, 187);
+}
+.back-button button {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 3em;
+  margin-bottom: .5em;
+  padding: 5px 5px;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 15%;
+  text-shadow: 1px 1px 2px rgb(80, 70, 70);
+  box-shadow: .5px .5px 3px rgb(53, 53, 53);
+}
+
+.back-button button:hover {
+  color: rgb(226, 226, 226);
+}
+
+#info {
+  text-align: left;
+  padding-left: 5px;
+  width: 50%;
+  text-shadow: .2px .2px 2px rgb(65, 64, 64);
+}
+
+#header-title {
+  padding-top: 10px;
+}
+
+#nav-p {
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#home-back {
+  background-image: url(./img/stockholm.jpg);
+}
+
+#semla-back {
+  background-image: url(./img/Semla-TotallySwedish.jpg);
+}
+
+#midsommar-back {
+  background-image: url(./img/midsommar.jpg);
+}
+
+
+#fika-back {
+  background-image: url(./img/fika.jpg);
 }
 
 @keyframes App-logo-spin {

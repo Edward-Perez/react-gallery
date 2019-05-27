@@ -3,8 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 const MainNav = () => {
   return (
-    <nav className="main-nav">
+    <nav className="main-nav">     
       <ul>
+        <li><p id='nav-p'>Click →</p></li>
         <li><NavLink to='/semla'>Semla</NavLink></li>
         <li><NavLink to='/midsommar'>Midsommar</NavLink></li>
         <li><NavLink to='/fika'>Fika</NavLink></li>

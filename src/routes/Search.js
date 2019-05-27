@@ -24,7 +24,7 @@ export default class Search extends Component {
     return (
       <div className='Header'>
         <Header title={title}/>
-        <NavLink to='/'>Back Home</NavLink>
+        <NavLink to='/' id='back-home-button'>Back Home</NavLink>
         <GalleryList data={data} />
       </div>
     )
