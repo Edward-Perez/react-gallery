@@ -15,8 +15,6 @@ import NotFound from './routes/NotFound';
 // API
 import apiKey from './config';
 
-// const loadingDiv = document.getElementById('loading-div');
-
 // Main class which holds data on all images and directs to specific routes
 export default class App extends Component {
 

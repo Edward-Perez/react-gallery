@@ -18,7 +18,7 @@ export default class Midsommar extends Component {
 
   render() {
     const title='The Greatest Holiday In The World';
-    const info='Once a year the Swedes get together for a non stop drinking bonanza while dancing and singing around a stucture which resembles...well... I\'ll let you figure that one out.';
+    const info='If you see one of these bad boys up, get ready for a non stop drinking bonanza while dancing and singing around a stucture which resembles...well... I\'ll let you figure that one out.';
     const { data } = this.props;
     return (
       <div className='Header'>

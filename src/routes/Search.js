@@ -23,8 +23,10 @@ export default class Search extends Component {
     const { data } = this.props; 
     return (
       <div className='Header'>
-        <Header title={title}/>
-        <NavLink to='/' id='back-home-button'>Back Home</NavLink>
+        <div id='search' className='background'>
+          <Header title={title}/>
+          <NavLink to='/' id='back-home-button'>Back Home</NavLink>
+        </div>
         <GalleryList data={data} />
       </div>
     )

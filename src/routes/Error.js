@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 const Error = (props) => {
   return (
     <div className='error-page'>
-      <h1>Whoop looks like we have a {props.message}</h1>   
-      <p>Could you please refresh?</p>   
+      <h1>Danbot has spotted a: {props.message}</h1>   
+      <p>Danbot suggest a refresh</p>   
     </div>
   )
 }
