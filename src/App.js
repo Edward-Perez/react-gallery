@@ -49,7 +49,6 @@ export default class App extends Component {
         console.log('Error receiving response data',error);
       });
   }
-
   render() {
     if(this.state.error) {
       return (
@@ -57,7 +56,6 @@ export default class App extends Component {
       )
     } 
     return (
-
       <Routes 
       search={this.getData}
       data={this.state.data} 

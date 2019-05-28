@@ -35,10 +35,14 @@ body {
 }
 
 .load {
-  height: 1000px;
-  background-color: black;
+  height: 800px;
+  width: 100%;
+  background-image: url(./img/flag.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 2em;
-  color: white;
+  color: black;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
 }
 
 ::placeholder {
