@@ -10,7 +10,8 @@ export default class Semla extends PureComponent {
 
   static propTypes={
     search: PropTypes.func.isRequired,
-    data: PropTypes.array.isRequired
+    data: PropTypes.array.isRequired,
+    loading: PropTypes.bool.isRequired
   }
 
   componentDidMount() {
@@ -20,7 +21,7 @@ export default class Semla extends PureComponent {
   render() {
     const title='The Semla\'s... its pure happiness' ;
     const info='The Swedes have dedicated an entire day to these scrumptious treats. ';
-    const { data } = this.props; 
+    const { data, loading } = this.props; 
     return (
       <div className='Header'>
         <div id='semla-back' className='background'>
@@ -28,8 +29,12 @@ export default class Semla extends PureComponent {
           <p id='info'>{info}</p>
           <BackButton />
         </div>
-        <GalleryList 
-          data={data} />
+
+        { loading 
+        ? <h1 className= "load" >Loading...</h1>
+        : <GalleryList data={data} />
+        }
+        
       </div>
     )
   }

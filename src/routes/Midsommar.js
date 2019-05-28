@@ -9,7 +9,8 @@ export default class Midsommar extends Component {
 
   static propTypes={
     search: PropTypes.func.isRequired,
-    data: PropTypes.array.isRequired
+    data: PropTypes.array.isRequired,
+    loading: PropTypes.bool.isRequired
   }
 
   componentDidMount() {
@@ -19,7 +20,7 @@ export default class Midsommar extends Component {
   render() {
     const title='The Greatest Holiday In The World';
     const info='If you see one of these bad boys up, get ready for a non stop drinking bonanza while dancing and singing around a stucture which resembles...well... I\'ll let you figure that one out.';
-    const { data } = this.props;
+    const { data, loading } = this.props;
     return (
       <div className='Header'>
         <div id='midsommar-back' className='background'>
@@ -27,8 +28,12 @@ export default class Midsommar extends Component {
           <p id='info'>{info}</p>
           <BackButton />
         </div>
-        <GalleryList 
-          data={data} />
+
+        { loading 
+        ? <h1 className= "load" >Loading...</h1>
+        : <GalleryList data={data} />
+        }
+
       </div>
     )
   }

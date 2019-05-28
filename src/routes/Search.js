@@ -11,7 +11,8 @@ export default class Search extends Component {
   static propTypes={
     value: PropTypes.string.isRequired,
     search: PropTypes.func.isRequired,
-    data: PropTypes.array.isRequired
+    data: PropTypes.array.isRequired,
+    loading: PropTypes.bool.isRequired
   }
 
   componentDidMount() {
@@ -20,14 +21,20 @@ export default class Search extends Component {
   
   render() {
     const title=`Search Results for "${this.props.value}"` ;
-    const { data } = this.props; 
+    const { data, loading } = this.props; 
+    
     return (
       <div className='Header'>
         <div id='search' className='background'>
           <Header title={title}/>
           <NavLink to='/' id='back-home-button'>Back Home</NavLink>
         </div>
-        <GalleryList data={data} />
+
+        { loading
+        ? <h1 className= "load" >Loading...</h1>
+        : <GalleryList data={data} />
+        }
+
       </div>
     )
   }

@@ -10,7 +10,8 @@ export default class Home extends Component {
 
   static propTypes={
     search: PropTypes.func.isRequired,
-    data: PropTypes.array.isRequired
+    data: PropTypes.array.isRequired,
+    loading: PropTypes.bool.isRequired
   }
 
   componentDidMount() {
@@ -19,7 +20,7 @@ export default class Home extends Component {
 
   render() {
     const title='Come See My New Home... Sweden';
-    const { data } = this.props;
+    const { data, loading } = this.props;
 
     return (
       <div className='Header'>
@@ -28,7 +29,12 @@ export default class Home extends Component {
           <SearchForm />
           <MainNav />
         </div>
-        <GalleryList data={data} />
+
+        {loading 
+        ? <h1 className= "load" >Loading...</h1>
+        : <GalleryList data={data} />
+        }
+        
       </div>
     )
   }

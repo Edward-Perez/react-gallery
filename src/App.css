@@ -34,6 +34,13 @@ body {
   padding-top: 2em;
 }
 
+.load {
+  height: 1000px;
+  background-color: black;
+  padding-top: 2em;
+  color: white;
+}
+
 ::placeholder {
   color: whitesmoke;
 }
@@ -75,6 +82,11 @@ body {
   color: rgb(226, 226, 226);
 }
 
+.not-found {
+  background-color: rgb(68, 67, 67);
+  color: whitesmoke;
+}
+
 #info {
   text-align: left;
   padding-left: 5px;
@@ -93,14 +105,18 @@ body {
 
 #search {
   background-image: url(./img/search.jpg);
-  padding-bottom: 6em;
+  padding-bottom: 6em 0 6em 0;
   color: white;
-  text-shadow: .2px .2px 2px rgb(212, 211, 211);
+  text-shadow: .5px .5px 2px rgb(212, 211, 211);
 }
 
 #search #back-home-button {
   color: white;
   font-size: 1.2em;
+  border: 1px solid whitesmoke;
+  border-radius: 3%;
+  background-color: transparent;
+  padding: 5px;
   text-shadow: 1px 1px 1px rgb(107, 106, 106);
 }
 

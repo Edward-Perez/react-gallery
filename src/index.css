@@ -111,6 +111,11 @@ input {
     margin: auto;
   }
 }
+.header {
+  padding-bottom: 9em;
+  color: white;
+  text-shadow: 1.2px 1.2px 3px rgb(68, 26, 26);
+}
 
 @media only screen and (min-width: 768px)  {
   body {
@@ -126,11 +131,22 @@ input {
     display: flex;
     justify-content: center;
   }
+
   
   .main-nav li {
+    padding-top: -3em;
     margin: 10px;
     width: 100px;
   }
+
+  .background {
+    padding-bottom: 6em;
+  }
+
+  #search {
+    padding-bottom: 15em;
+  }
+
 }
 
 
