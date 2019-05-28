@@ -1,3 +1,53 @@
+# React Gallery App
+### Project 7 from the Treehouse Full Stack Javascript TechDegree program. 
+**_React, React Router, Axios, Javascript_**
+
+In this project, I will create a image gallery using the React library to load JSX, Routes and fetch data from Flickr's API using Axios.
+
+### Project Requirements
+* Project set up correctly using Create React App
+  * No warnings or errors in console about unused/missing assets.
+  * Running npm start successfully launches the app.
+  * The node_modules folder is referenced in the .gitignore file and isn't in the repo.
+* App is broken up into components.
+* Mockups provided match project
+* Routing
+  * React Router properly implemented.
+  * URLs correctly match routes.
+  * Clicking a nav link navigates user to new route and loads new data.
+* Data Fetching
+  * Uses Flickr API correctly: API Keys and proper Photo source URLs.
+  * Data fetched from a "container" component that passes data down to presentation component via props.
+* Displaying Data
+  * No console errors or warnings regarding unique "key" props.
+  * Key props passed to images.
+* Search Field
+  * Submitting search data returns & displays results.
+    
+### Exceeds Requirements
+* Includes a 404-like error route that displays when a URL path does not match an existing route.
+* Displays a loading indicator each time the app fetches new data on at least the search route.
+* If no matches are found by the search, the app includes a message to tell the user there are no matches.
+  
+
+### Changes to styling
+* Change background color
+* Added background image to all routes
+* Added "Back Button" 
+* Added "Back Home Button" 
+* Added text-shadow and box-shadow
+* Added hover effects
+
+### To Use Application
+* Sign up for a yahoo account to sign into Flickr.com
+* Apply for a non-commercial API Key 
+* Create a new file name "config.js" in the project "src" folder
+* Add the following code snippet into the "config.js" with your personal API key
+```js 
+const apiKey = ' Place your API Key inside these single quotes ';
+export default apiKey;
+``` 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
