@@ -9,12 +9,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h2 {
-  font-size: 2em;
-  margin: 52px 0 40px;
-  text-transform: capitalize;
-}
-
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -24,10 +18,15 @@ a {
   text-decoration: none;
 }
 
+.header {
+  margin: 1rem 0 1rem 0;
+  line-height: 2rem;
+}
+
 .search-form {
   max-width: 460px;
   display: flex;
-  margin: 0 auto 32px;
+  margin: 0 auto 2rem;
 }
 
 .search-form button {
@@ -41,7 +40,7 @@ a {
 }
 
 input {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 400;
   width: 100%;
   background-color: transparent;
@@ -53,17 +52,18 @@ input {
   color: white;
 }
 
-.main-nav li, #nav-p {
+.main-nav li {
+  font-size: 1rem;
   width: 100%;
   margin-bottom: 1em;
 }
 
-.main-nav a, #nav-p {
+.main-nav a {
   display: block;
   background: transparent;
   border-radius: 3px;
   padding: 2px;
-  color: #fff;
+  color: #555;
   text-shadow: 1.5px 1.5px 1px rgb(26, 25, 25);
 }
 
@@ -98,10 +98,6 @@ input {
   transform: scale(1.65);
 }
 
-.photo-container .not-found {
-  width: 100%;
-}
-
 @media only screen and (max-width: 767px)  {
   body {
     padding-bottom: 2em;
@@ -110,11 +106,6 @@ input {
   .photo-container li {
     margin: auto;
   }
-}
-.header {
-  padding-bottom: 9em;
-  color: white;
-  text-shadow: 1.2px 1.2px 3px rgb(68, 26, 26);
 }
 
 @media only screen and (min-width: 768px)  {
@@ -137,14 +128,6 @@ input {
     padding-top: -3em;
     margin: 10px;
     width: 100px;
-  }
-
-  .background {
-    padding-bottom: 6em;
-  }
-
-  #search {
-    padding-bottom: 15em;
   }
 
 }

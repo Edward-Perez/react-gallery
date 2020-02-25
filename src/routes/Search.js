@@ -24,8 +24,8 @@ export default class Search extends Component {
     const { data, loading } = this.props; 
     
     return (
-      <div className='Header'>
-        <div id='search' className='background'>
+      <div>
+        <div id='search'>
           <Header title={title}/>
           <NavLink to='/' id='back-home-button'>Back Home</NavLink>
         </div>

@@ -18,14 +18,12 @@ export default class Fika extends Component {
   }
 
   render() {
-    const title='Fika... The most important part of life';
-    const info='Fika is a special moment between two or more individuals having coffee or tea along with a few snacks like those semla\'s.'
+    const title='Search Results for "Fika"';
     const { data, loading } = this.props;
     return (
       <div className='Header'>
         <div id='fika-back' className='background'>
           <Header title={title}/>
-          <p id='info'>{info}</p>
           <BackButton />
         </div>
 

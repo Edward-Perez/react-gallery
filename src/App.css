@@ -1,17 +1,11 @@
 body {
   color: white;
-  background-color: rgb(240, 238, 238);
+  font-size: 10px;
+  background-color: #222;
 }
 
-
-.error-page {
-  background-image: url('./img/error.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 1000px;
-  color: black;
-
+p {
+  font-size: 1.6rem;
 }
 
 .error-page p{
@@ -21,32 +15,6 @@ body {
   background-color: black;
   margin-top: 1em;
   font-size: 1.2em;
-  color: yellow;  
-
-}
-
-.header {
-  padding-bottom: 5em;
-  color: white;
-  text-shadow: 1.2px 1.2px 3px rgb(68, 26, 26);
-}
-.home {
-  padding-top: 2em;
-}
-
-.load {
-  height: 800px;
-  width: 100%;
-  background-image: url(./img/flag.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 2em;
-  color: black;
-  text-shadow: 2px 2px 3px rgb(255, 255, 255);
-}
-
-::placeholder {
-  color: whitesmoke;
 }
 
 .photo-container ul {
@@ -55,18 +23,10 @@ body {
 }
 
 .photo-container ul li {
-  border: 1px solid rgb(172, 171, 171);
   border-radius: 2%;
-  box-shadow: 2px 2px 5px rgb(36, 36, 36);
 }
 
-.background {
-  background-repeat: no-repeat;
-  background-position: center top; 
-  background-size: cover; 
-  border-bottom: 2px solid rgb(51, 51, 51);
-  box-shadow: 3px 3px 5px rgb(187, 187, 187);
-}
+
 .back-button button {
   font-size: 15px;
   font-weight: 500;
@@ -98,22 +58,6 @@ body {
   text-shadow: .2px .2px 2px rgb(65, 64, 64);
 }
 
-#header-title {
-  padding-top: 10px;
-}
-
-#nav-p {
-  padding-left: 20px;
-  color: rgb(255, 255, 255);
-}
-
-#search {
-  background-image: url(./img/search.jpg);
-  padding-bottom: 6em 0 6em 0;
-  color: white;
-  text-shadow: .5px .5px 2px rgb(212, 211, 211);
-}
-
 #search #back-home-button {
   color: white;
   font-size: 1.2em;
@@ -124,19 +68,3 @@ body {
   text-shadow: 1px 1px 1px rgb(107, 106, 106);
 }
 
-#home-back {
-  background-image: url(./img/stockholm.jpg);
-}
-
-#semla-back {
-  background-image: url(./img/Semla-TotallySwedish.jpg);
-}
-
-#midsommar-back {
-  background-image: url(./img/midsommar.jpg);
-}
-
-
-#fika-back {
-  background-image: url(./img/fika.jpg);
-}

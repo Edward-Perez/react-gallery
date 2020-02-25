@@ -19,14 +19,12 @@ export default class Semla extends PureComponent {
   }
   
   render() {
-    const title='The Semla\'s... its pure happiness' ;
-    const info='The Swedes have dedicated an entire day to these scrumptious treats. ';
+    const title='Search Results for "Semla"';
     const { data, loading } = this.props; 
     return (
-      <div className='Header'>
-        <div id='semla-back' className='background'>
+      <div>
+        <div>
           <Header title={title}/>
-          <p id='info'>{info}</p>
           <BackButton />
         </div>
 

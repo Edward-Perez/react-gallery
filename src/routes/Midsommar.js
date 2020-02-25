@@ -18,14 +18,12 @@ export default class Midsommar extends Component {
   }
 
   render() {
-    const title='The Greatest Holiday In The World';
-    const info='If you see one of these bad boys up, get ready for a non stop drinking bonanza while dancing and singing around a stucture which resembles...well... I\'ll let you figure that one out.';
+    const title='Search Results for "Midsommar"';
     const { data, loading } = this.props;
     return (
-      <div className='Header'>
-        <div id='midsommar-back' className='background'>
+      <div>
+        <div>
           <Header title={title}/>
-          <p id='info'>{info}</p>
           <BackButton />
         </div>
 

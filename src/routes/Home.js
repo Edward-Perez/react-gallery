@@ -19,12 +19,12 @@ export default class Home extends Component {
   }
 
   render() {
-    const title='Come See My New Home... Sweden';
+    const title='Welcome';
     const { data, loading } = this.props;
 
     return (
-      <div className='Header'>
-        <div id='home-back' className='background'>
+      <div>
+        <div id='home-back'>
           <Header title={title} />
           <SearchForm />
           <MainNav />
