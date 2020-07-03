@@ -1,18 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-const Header = (props) => {
-  
+function Header({ title, children }) {
   return (
-    <div className='header'>
-      <h1>React Gallery App </h1>
-      <h2>{props.title}</h2>
+    <div className="header">
+      <div className="header-content">
+        <h2>{title}</h2>
+        {children}
+      </div>
     </div>
-  )
+  );
 }
 
 Header.propTypes = {
-  title: PropTypes.string.isRequired
-}
+  title: PropTypes.string.isRequired,
+};
 
 export default Header;

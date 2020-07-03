@@ -65,3 +65,4 @@ yarn-error.log*
 
 #environment variables
 .env
+.config 
