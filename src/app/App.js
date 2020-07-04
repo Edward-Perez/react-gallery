@@ -4,7 +4,7 @@ import { AppData } from "app/AppData";
 import "app/App.css";
 
 // Routes
-import Routes from "../Routes";
+import Routes from "Routes/index";
 
 // Container
 import SearchInputForm from "containers/SearchInputForm";
