@@ -2,7 +2,7 @@
 
 ### Project 7 from the Treehouse Full Stack Javascript TechDegree program.
 
-**_React, React Router, Axios, Javascript_**
+**_React, React Router, Javascript_**
 
 In this project, I will create a image gallery using the React library to load JSX, Routes and fetch data from Flickr's API using Axios.
 
@@ -37,8 +37,6 @@ In this project, I will create a image gallery using the React library to load J
 
 - Change background color
 - Added background image to all routes
-- Added "Back Button"
-- Added "Back Home Button"
 - Added text-shadow and box-shadow
 - Added hover effects
 
