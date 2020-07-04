@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true
   },
-  "include": ["src"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "config", ".vscode"]
 }
