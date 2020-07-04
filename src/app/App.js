@@ -15,7 +15,6 @@ import Header from "components/Header";
 
 function App() {
   const [appData] = useState(AppData);
-
   return (
     <div className="App">
       <Routes userSearchInput={appData.initialSearch}>
