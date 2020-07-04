@@ -1,8 +1,5 @@
-import { apiKey } from ".config";
-
 export const AppData = {
   title: "React Gallery",
-  apiKey: apiKey,
   initialSearch: "matterhorn",
   trendingData: [
     {
