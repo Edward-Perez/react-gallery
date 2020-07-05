@@ -1,4 +1,4 @@
-# React Gallery App
+# AWS React Gallery App
 
 ### Project 7 from the Treehouse Full Stack Javascript TechDegree program.
 
