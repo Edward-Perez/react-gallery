@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch, useParams } from "react-router-dom";
 import MainSection from "containers/MainSection";
 import { DisplayNotFound } from "components/utilities";
 
-function Routes({ children, userSearchInput }) {
+function RouteController({ children, userSearchInput }) {
   function LoadGallery() {
     const { slug } = useParams();
     return <MainSection userSearchInput={slug} />;
@@ -26,8 +26,8 @@ function Routes({ children, userSearchInput }) {
   );
 }
 
-Routes.propsTypes = {
+RouteController.propsTypes = {
   userSearchInput: PropTypes.string.isRequired,
 };
 
-export default Routes;
+export default RouteController;

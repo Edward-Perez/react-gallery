@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { AppData } from "app/AppData";
 import "app/App.css";
 
-// Routes
-import Routes from "Routes";
+// Route Controller
+import RouteController from "RouteController";
 
 // Container
 import SearchInputForm from "containers/SearchInputForm";
@@ -17,12 +17,12 @@ function App() {
   const [appData] = useState(AppData);
   return (
     <div className="App">
-      <Routes userSearchInput={appData.initialSearch}>
+      <RouteController userSearchInput={appData.initialSearch}>
         <Header title={appData.title}>
           <SearchInputForm />
           <TrendingNavList trendingData={appData.trendingData} />
         </Header>
-      </Routes>
+      </RouteController>
     </div>
   );
 }
